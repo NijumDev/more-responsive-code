@@ -8,18 +8,26 @@
         .container{
             display: grid;
             gap: 20px;
-
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3, 100px) 50px 50px;
         }
 
         .box{
-            background-color: rgb(178, 197, 197);
+            background-color: rgb(75, 104, 104);
             padding: 10px;
         }
+        #saidbur{
+            grid-row: span 5;
+        }
+        .footer{
+            grid-column: span 3;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">1</div>
+        <div id="saidbur" class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
@@ -29,8 +37,8 @@
         <div class="box">8</div>
         <div class="box">9</div>
         <div class="box">10</div>
-        <div class="box">11</div>
-        <div class="box">12</div>
+        <div class="box footer">11</div>
+        <div class="box footer">12</div>
 
 
     </div>
